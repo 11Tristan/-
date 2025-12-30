@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="container">
+  <h1>學生成績管理系統</h1>
+  
+  <div class="input-group">
+    <input type="text" id="studentName" placeholder="輸入學生姓名">
+    <input type="number" id="studentScore" placeholder="輸入分數 (0-100)">
+    <button onclick="addStudent()">新增學生</button>
+  </div>
+
+  <div class="actions">
+    <button class="btn-secondary" onclick="sortByScore()">依分數排序</button>
+    <button class="btn-warning" onclick="clearAll()">清空列表</button>
+  </div>
+
+  <div class="display-area">
+    <h3>學生列表：</h3>
+    <p id="stats">目前人數：0 | 平均分數：0</p>
+    
+    <table border="1">
+      <thead>
+        <tr>
+          <th>姓名</th>
+          <th>分數</th>
+          <th>狀態</th> </tr>
+      </thead>
+      <tbody id="studentList">
+        </tbody>
+    </table>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
